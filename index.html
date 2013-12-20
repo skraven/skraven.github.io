@@ -112,23 +112,10 @@ var star = new Kinetic.Star({
 
         
       }, layer);
-
+ layer.add(star);
       anim.start();
 
-var arbolito = new Image();
-      arbolito.onload = function() {
-        var arbolna = new Kinetic.Image({
-          x: 700,
-          y: 200,
-          image: arbolito,
-          width: 260,
-          height: 300
-        });
 
-        layer.add(arbolna);
-        layer.add(star);
-        };
-      arbolito.src = 'img/arbol2.png';
 
 
 
@@ -248,19 +235,6 @@ var animmar = new Kinetic.Animation(function(frame) {
 
 //DUENDECILLO
 
-var duendebody = new Image();
-      duendebody.onload = function() {
-        var cuerpoduende = new Kinetic.Image({
-          x: 550,
-          y: 400,
-          image: duendebody,
-          width: 100,
-          height: 82
-        });
-
-        layer.add(cuerpoduende);
-        };
-      duendebody.src = 'img/duendebody.png';
 
 
 
@@ -314,20 +288,6 @@ cabesaduende.on('mouseover', function() {
 
 
 //Reno
-var renobody = new Image();
-      renobody.onload = function() {
-        var cuerporeno = new Kinetic.Image({
-          x: 650,
-          y: 400,
-          image: renobody,
-          width: 100,
-          height: 82
-        });
-
-        layer.add(cuerporeno);
-        };
-      renobody.src = 'img/renobody.png';
-
 
 
 var renohead = new Image();
@@ -367,20 +327,6 @@ var renohead = new Image();
       renohead.src = 'img/renohead.png';
 
 //SNOWMAN
-var snowbody = new Image();
-      snowbody.onload = function() {
-        var cuerposnow = new Kinetic.Image({
-          x: 870,
-          y: 430,
-          image: snowbody,
-          width: 100,
-          height: 62
-        });
-
-        layer.add(cuerposnow);
-        };
-      snowbody.src = 'img/snowbody.png';
-
 
 
 var snowhead = new Image();
